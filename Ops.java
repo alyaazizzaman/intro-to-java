@@ -11,13 +11,19 @@ public class Ops {
 
   //main gets executed when we run this class with the java command
   public static void main(String [] args){
+    
     //invoke sum, passing in 1 and 2 as arguemnts and print the results
     System.out.println( sum(1, 2) );
     System.out.println( multiply(1, 2, 3) );
+    System.out.println( power(3));
 
   }
 
   public static int multiply(int x, int y, int z) {
     return x*y*z;
+  }
+
+  public static int power(int x){
+    return x * x;
   }
 }
