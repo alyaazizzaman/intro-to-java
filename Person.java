@@ -10,14 +10,14 @@ public class Person {
   //it does not need a return type
   public Person(String first, String last) {
     //since the instance variable 'first' 'shadows' the parameter
-    //'first', you must used 'this.first'
+    //'first', you must use 'this.first'
     this.first = first;
     this.last = last;
   }
   //the 'fullName method' is added inside the class definition
   //you don't need 'this' but it is recommended
   public String fullName(){
-    return first + " " + last;
+    return this.first + " " + this.last;
   }
 
   //use the main method to test our class
